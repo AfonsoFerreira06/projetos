@@ -69,11 +69,15 @@ main{
     background-color: var(--cor2);
     grid-area: main;
     height: 600px;
+    display: flex;
+    flex-wrap: wrap;
 }
 aside{
     background-color: var(--cor4);
     grid-area: aside;
     height: 600px;
+    display: flex;
+    flex-flow:column wrap;
 }
 footer{
     background-color: var(--cor1);
