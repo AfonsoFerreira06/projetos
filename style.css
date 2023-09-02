@@ -1,11 +1,12 @@
 :root{
-    --cor0:#5E7475;
-    --cor1:#3B7175;
-    --cor2:#84bebe;
-    --cor3:#C5F3F7;
-    --cor4:#aae0e9;
-    --cor5:#d3ccaa;
-    --cor6: whitesmoke;
+    --cor0:#171A21;
+    --cor1:#002c6d;
+    --cor2:#6094b8;
+    --cor3:#316fe4;
+    --botao:#29a00c;
+    --price:#BEEE11;
+    --font:#FFFFFF;
+    --fdest:#DCDEDF;
 }
 *{
     margin: 0;
@@ -18,18 +19,18 @@
     width: 100%;
     height: 100%;
     grid-template-areas:
-    'header header header'
-    'nav nav nav'
-    'main main aside'
+    'hglob hglob hglob'
+    'holder holder holder'
+    'cont cont cont'
     'footer footer footer'
     ;
 }
-header{
+.header-global{
     background-color: var(--cor0);
-    grid-area: header;
+    grid-area: hglob;
     height: 80px;
     display: flex;
-    justify-content:center;
+    justify-content:space-around;
     align-items: center;
 }
 .logo{
@@ -40,8 +41,8 @@ header{
     border-radius: 50%;
 
 }
-nav{
-    background-color: var(--cor1);
+.nav-prim{
+    background-color: var(--cor0);
     grid-area: nav;
     height: 60px;
     display: flex;
@@ -51,7 +52,7 @@ nav{
 } 
 nav > a{
     display: inline-block;
-    color: var(--cor6);
+    color: var(--fdest);
     text-decoration: none;
 }
 a::after{
@@ -59,28 +60,28 @@ a::after{
     display: block;
     width: 0;
     height: 3px;
-    background: var(--cor5);
+    background: var(--cor2);
     transition: width .3s;
 }
 a:hover::after{
     width: 100%;
 }
-main{
-    background-color: var(--cor2);
-    grid-area: main;
-    height: 600px;
-    display: flex;
-    flex-wrap: wrap;
-}
-aside{
-    background-color: var(--cor4);
-    grid-area: aside;
+.holder{
+    background-color: var(--cor1);
+    grid-area: holder;
     height: 600px;
     display: flex;
     flex-flow:column wrap;
 }
-footer{
+.conteudo{
     background-color: var(--cor1);
+    grid-area: cont;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer{
+    background-color: var(--cor0);
     grid-area: footer;
     height: 50px;
 }
