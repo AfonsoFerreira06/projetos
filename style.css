@@ -34,6 +34,10 @@
     justify-content:space-around;
     align-items: center;
 }
+.logo img{
+    width: 10vw;
+    height: 6vh;
+}
 .nav-prim{
     background-color: var(--cor0);
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -93,11 +97,11 @@
 /* Fim header */
 /* Inicio holder */
 .holder{
-    background-image: url(imgs/steam_logo_splash.png);
+    background-image: url(IMGs/WhatsApp\ Image\ 2023-09-05\ at\ 22.14.12.jpeg);
     background-repeat: no-repeat;
     background-size:cover;
     grid-area: holder;
-    height: 75vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     flex-flow:row wrap;
@@ -108,7 +112,7 @@
     width: 60vw;
     height: 5vh;
     background-image: linear-gradient(90deg, #6094b8, #316fe4, #002c6d);
-    border-radius: 12px;
+    border-radius: 1vh;
     box-shadow: #20242c 0px 5px 3px;
     display: flex;
     justify-content: space-around;
@@ -137,7 +141,7 @@
 }
 #lupinha{
     background-color: var(--cor1);
-    background-image: url(/projeto-1/icons8-lupa-32.png);
+    background-image: url(IMGs/icons8-lupa-32.png);
     background-repeat: no-repeat;
     background-position-y:3px ;
     background-size: 20px 20px;
@@ -149,18 +153,55 @@
 .conteudo{
     background-color: var(--cor1);
     grid-area: cont;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 /* Inicio slider */
 .destaques{
+    width: 80vw;
+    height: 60vh;
+    margin-top: 8vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+.text{
+    width: 64.2vw;
+    height: 12vh;
+    background-color: var(--cor0);
+    box-shadow: 5px 0 4rem black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--font);
+    border: var(--cor2)solid;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#slider {
+    width: 100%;
+    max-width: 80%;
+    height: 60vh;
+    max-height: 100%;
+    position: relative;
+    box-shadow: 5px 0 4rem black;
+    display: flex;
+}
+#slider img{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    transition: opacity 800ms;
+    border: var(--cor2)solid;
+}
+#slider img.selected { 
+    opacity: 1;
 }
 /* Fim slider */
-
 footer{
     background-color: var(--cor0);
     grid-area: footer;

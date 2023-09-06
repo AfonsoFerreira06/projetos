@@ -9,8 +9,8 @@
 <body>
     <div class="container">
         <header class="header-global">
-            <div class="logo"></div>
             <nav class="nav-prim">
+                <div class="logo"><img src="IMGs/steam-logo-1-removebg-preview.png" alt=""></div>
                 <a href="" class="hmenu">Loja</a>
                 <a href="" class="hmenu">Comunidade</a>
                 <a href="" class="hmenu">Sobre</a>
@@ -36,28 +36,17 @@
          </div>
          <main class="conteudo">
              <div class="destaques" id="dest">
-                 <div class="slider">
-                     <input type="radio" name="radio-btn" id="radio1">
-                     <input type="radio" name="radio-btn" id="radio2">
-                     <input type="radio" name="radio-btn" id="radio3">
-                     <input type="radio" name="radio-btn" id="radio4">
-                     <input type="radio" name="radio-btn" id="radio5">
-                 </div>
-                 <div class="primslide">
-                     <img src="IMGs/capsule_616x353.jpg" alt="Hollow knight">
-                 </div>
-                 <div class="side">
-                     <img src="IMGs/mortal-kombat-11-ultimate.webp" alt="">
-                 </div>
-                 <div class="slide">
-                     <img src="IMGs/Sem título.jpeg" alt="">
-                 </div>
-                 <div class="slide">
-                     <img src="IMGs/horizon-forbidden-west-capa.jpg" alt="">
-                 </div>
-                 <div class="slide">
-                     <img src="IMGs/unnamed.png" alt="">
-                 </div>
+                <div class="text">Veja nossos destaques da Semana</div>
+                <div id="slider">
+                    <img class="selected" src="IMGs/capsule_616x353.jpg" alt="Hollow knight">
+                    <img src="IMGs/horizon-forbidden-west-capa.jpg" alt="Horizon fw">
+                    <img src="IMGs/mortal-kombat-11-ultimate.webp" alt="MK 11">
+                    <img src="IMGs/unnamed.png" alt="The goat">
+                </div>
+                
+                <script src="script.js"></script>
+                 
+                </div>
              </div>
              <div class="evento"></div>
              <div class="promocoes" id="promo"></div>
