@@ -16,8 +16,8 @@
 .container{
     background-color: var(--cor3);
     display: grid;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     grid-template-areas:
     'hglob hglob hglob'
     'holder holder holder'
@@ -25,6 +25,7 @@
     'footer footer footer'
     ;
 }
+/* Inicio header */
 .header-global{
     background-color: var(--cor0);
     grid-area: hglob;
@@ -35,6 +36,8 @@
 }
 .nav-prim{
     background-color: var(--cor0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3em;
     grid-area: nav;
     height: 8vh;
     display: flex;
@@ -42,12 +45,12 @@
     align-items:center;
     gap: 50px;
 } 
-nav > a{
+.hmenu{
     display: inline-block;
     color: var(--fdest);
     text-decoration: none;
 }
-.nav-prim::after{
+.hmenu::after{
     content: '';
     display: block;
     width: 0;
@@ -55,26 +58,67 @@ nav > a{
     background: var(--fdest);
     transition: width .3s;
 }
-.nav-prim:hover::after{
+.hmenu:hover::after{
     width: 100%;
 }
-.holder{
-    background-color: var(--cor1);
-    grid-area: holder;
-    height: 80vh;
+
+.menu{
+    margin-bottom: 38px;
+    font-size: 11px;
+    width: 288px;
+    height: 24px;
     display: flex;
-    flex-flow:row wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    gap: 3px;
+}
+.install{
+    display: flex;
     justify-content: center;
+    padding-top: 5px;
+    width: 127px;
+    height: 24px;
+    background-color: var(--botao);
+    color: var(--font);
+    font-size: 11px;
+}
+.lmenu{
+    color: var(--fdest);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+.lmenu:hover{
+    color: var(--font);
+}
+/* Fim header */
+/* Inicio holder */
+.holder{
+    background-image: url(imgs/steam_logo_splash.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    grid-area: holder;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    flex-flow:row wrap;
+    padding-top: 12px;
 }
 .nav-loja{
-    margin-top: 2vh;
+    margin-top: 1vh;
     width: 60vw;
     height: 5vh;
-    background-image: linear-gradient(90deg ,var(--cor2), var(--cor3),rgb(0, 12, 36));
+    background-image: linear-gradient(90deg, #6094b8, #316fe4, #002c6d);
+    border-radius: 12px;
     box-shadow: #20242c 0px 5px 3px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.nav-loja a{
+    font-size: 1em;
+    display: inline-block;
+    color: var(--fdest);
+    text-decoration: none;
 }
 .barra{
     display:flex;
@@ -101,19 +145,21 @@ nav > a{
     width: 2vw;
     height: 3vh;
 }
+/* Fim holder */
 .conteudo{
     background-color: var(--cor1);
     grid-area: cont;
     height: 80vh;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
 }
+/* Inicio slider */
 .destaques{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+/* Fim slider */
 
 footer{
     background-color: var(--cor0);
