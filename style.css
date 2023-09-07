@@ -169,7 +169,7 @@
     align-items: center;
 }
 .text{
-    width: 90%;
+    width: 80%;
     height: 12vh;
     background-color: var(--cor0);
     box-shadow: 5px 0 4rem black;
