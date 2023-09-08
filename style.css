@@ -101,7 +101,7 @@
     background-repeat: no-repeat;
     background-size:cover;
     grid-area: holder;
-    height: 70vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     flex-flow:row wrap;
@@ -141,7 +141,7 @@
 }
 #lupinha{
     background-color: var(--cor1);
-    background-image: url(IMGs/lupinha.jpeg);
+    background-image: url(IMGs/lupinha.png);
     background-repeat: no-repeat;
     background-position-y:3px ;
     background-size: 20px 20px;
@@ -211,7 +211,7 @@ footer{
     align-items: center;
     color:var(--font)
 }
-@media screen and (max-width: 768px){
+@media (max-width: 768px){
     .container{
         width: 100%;
         height: 100%;
@@ -304,6 +304,9 @@ footer{
     .barra{
         display:none;
     }
+    .text{
+        width: 90%;
+    }
     #slider {
         width: 100%;
         max-width: 90%;
@@ -323,7 +326,7 @@ footer{
         border: var(--cor2)solid;
     }
 }
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
     .container{
         width: 100%;
         height: 100%;
@@ -339,8 +342,11 @@ footer{
         align-items: center;
     }
     .logo img{
-        width: 13vw;
-        height: 6vh;
+        width: 12vw;
+        height: 4vh;
+    }
+    .text{
+        width: 90%;
     }
     .nav-prim{
         background-color: var(--cor0);
@@ -420,6 +426,120 @@ footer{
         max-width: 90%;
         height: 60vh;
         max-height: 100%;
+        position: relative;
+        box-shadow: 5px 0 4rem black;
+        display: flex;
+    }
+    #slider img{
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 800ms;
+        border: var(--cor2)solid;
+    }
+}
+@media (max-width: 400px){
+    .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-flow:column nowrap;
+    }
+    .header-global{
+        background-color: var(--cor0);
+        height: 10vh;
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+    }
+    .logo img{
+        width: 14vw;
+        height: 3vh;
+    }
+    .nav-prim{
+        background-color: var(--cor0);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: .8em;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        gap: 1.5vw;
+    } 
+    .hmenu::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: .2vh;
+        background: var(--fdest);
+        transition: width .3s;
+    }
+    .hmenu:hover::after{
+        width: 100%;
+    }
+    
+    .menu{
+        margin-bottom: 1vh;
+        font-size: .5em;
+        width: 30vw;
+        height: 3vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        gap: .7vw;
+    }
+    .install{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--botao);
+        color: var(--font);
+        font-size: .9em;
+    }
+    .destaques{
+        width: 80vw;
+        height: 60vh;
+        margin-top: 8vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .holder{
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        flex-flow:row wrap;
+        
+    }
+    .nav-loja{
+        margin-top: 1vh;
+        width: 80vw;
+        height: 5vh;
+        display: flex;
+        gap: 0;
+
+    }
+    .nav-loja a{
+        font-size: .7em;
+        display: inline-block;
+        color: var(--fdest);
+        text-decoration: none;
+    }
+    .barra{
+        display:none;
+    }
+    .text{
+        width: 90%;
+    }
+    #slider {
+        width: 100%;
+        max-width: 90%;
+        height: 100%;
+        max-height: 80%;
         position: relative;
         box-shadow: 5px 0 4rem black;
         display: flex;
