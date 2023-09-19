@@ -109,7 +109,7 @@
 /* Fim header */
 /* Inicio holder */
 .holder {
-    background-image: url(https://drive.google.com/drive/u/0/folders/1aoRxGyzJm4apydkdFh6DJmnaGqTej33A);
+    background-image: url(IMGs/maetSholder.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     grid-area: holder;
@@ -158,7 +158,7 @@
 
 #lupinha {
     background-color: var(--cor1);
-    background-image: url(https://drive.google.com/drive/u/0/folders/1aoRxGyzJm4apydkdFh6DJmnaGqTej33A);
+    background-image: url(IMGs/lupinha.png);
     background-repeat: no-repeat;
     background-position-y: 3px;
     background-size: 20px 20px;
