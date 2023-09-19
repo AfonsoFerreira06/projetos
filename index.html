@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>maetS</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <header class="header-global">
             <nav class="nav-prim">
-                <div class="logo"><img src="IMGs/logo.png" alt=""></div>
-                <a href="" class="hmenu">Loja</a>
-                <a href="" class="hmenu">Comunidade</a>
+                <div class="logo"><img src="https://drive.google.com/drive/u/0/folders/1aoRxGyzJm4apydkdFh6DJmnaGqTej33A" alt=""></div>
+                <a href="#" class="hmenu">Loja</a>
+                <a href="https://steamcommunity.com/" target="_blank" class="hmenu">Comunidade</a>
                 <a href="" class="hmenu">Sobre</a>
-                <a href="" class="hmenu">Suporte</a>
+                <a href="https://help.steampowered.com/pt/" target="_blank" class="hmenu">Apoie</a>
             </nav>
             <div class="menu">
                 <div class="install">Instale maetS</div>
@@ -24,32 +26,32 @@
         </header>
         <div class="holder">
             <nav class="nav-loja">
-             <a href=".lojahehe">A tua loja</a>
-             <a href="#dest">Destaques</a>
-             <a href="#promo">Promoções</a>
-             <a href="#cat">Categorias</a>
-             <div class="barra">
-             <input type="search" name="bpequisa" id="bpesquisa" placeholder="pesquisar">
-             <input type="submit" value="" id="lupinha">
-             </div>
+                <a href=".lojahehe">A tua loja</a>
+                <a href="#dest">Destaques</a>
+                <a href="#promo">Promoções</a>
+                <a href="#cat">Categorias</a>
+                <div class="barra">
+                    <input type="search" name="bpequisa" id="bpesquisa" placeholder="pesquisar">
+                    <input type="submit" value="" id="lupinha">
+                </div>
             </nav>
-         </div>
-         <main class="conteudo">
-             <div class="destaques" id="dest">
+        </div>
+        <main class="conteudo">
+            <div class="destaques" id="dest">
                 <div class="text">Veja nossos destaques da Semana</div>
                 <div id="slider">
-                    <img class="selected" src="IMGs/hk.jpg" alt="Hollow knight">
-                    <img src="IMGs/hfw.jpg" alt="Horizon fw">
-                    <img src="IMGs/mk11.webp" alt="MK 11">
-                    <img src="IMGs/fn.jpeg" alt="The goat">
+                    <img class="selected" src="https://drive.google.com/drive/u/0/folders/1aoRxGyzJm4apydkdFh6DJmnaGqTej33A" alt="Hollow knight">
+                    <img src="https://drive.google.com/drive/u/0/folders/1aoRxGyzJm4apydkdFh6DJmnaGqTej33A" alt="Horizon fw">
+                    <img src="https://drive.google.com/drive/u/0/folders/1aoRxGyzJm4apydkdFh6DJmnaGqTej33A" alt="MK 11">
+                    <img src="https://drive.google.com/drive/u/0/folders/1aoRxGyzJm4apydkdFh6DJmnaGqTej33A" alt="The goat">
                 </div>
-                
+
                 <script src="script.js">
                     let time = 5000,
                         currentImageIndex = 0,
                         images = document
-                                    .querySelectorAll("#slider img")
-                        max = images.length;
+                            .querySelectorAll("#slider img")
+                    max = images.length;
 
                     function nextImage() {
 
@@ -58,8 +60,8 @@
 
                         currentImageIndex++
 
-                    if(currentImageIndex >= max)
-                        currentImageIndex = 0
+                        if (currentImageIndex >= max)
+                            currentImageIndex = 0
 
                         images[currentImageIndex]
                             .classList.add("selected")
@@ -72,16 +74,24 @@
                         }, time)
                     }
 
-                window.addEventListener("load", start)
+                    window.addEventListener("load", start)
                 </script>
-                 
-                </div>
-             </div>
-             <div class="evento"></div>
-             <div class="promocoes" id="promo"></div>
-             <div class="categorias" id="cat"></div>
-         </main>
-         <footer><p>Página feita por: Afonso Ferreira</p></footer>
-     </div>
- </body>
- </html>
+
+            </div>
+    </div>
+    <div class="evento">
+        <div class="text">
+            <p>APROVEITE NOSSO EVENTO DE NATAL</p>
+        </div>
+        <div class="natal"></div>
+    </div>
+    <div class="promocoes" id="promo"></div>
+    <div class="categorias" id="cat"></div>
+    </main>
+    <footer>
+        <p>Página feita por: Afonso Ferreira</p>
+    </footer>
+    </div>
+</body>
+
+</html
